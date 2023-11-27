@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>G2 Brand Website - Youtube</title>
+        <link rel="stylesheet" href="Youtube.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ceabdc58e1.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
+    </head>
+    <body>
+        <div class="container">
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Youtube.html">Youtube Channel</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Visit Our Youtube Channel Below</h1>
+            <a href="https://www.youtube.com/channel/UC17VIr5hN91WT6rODeOU7Bw" class="hero-btn" target="_blank"><i class="fa fa-youtube"></i> Visit Our Youtube Channel</a>
+            <br>
+            <p class="inVText">Watch Our Introduction Video Below or watch it at our Youtube Channel</p>
+           <br> <iframe class="inVideo" height="315" src="https://www.youtube.com/embed/u1keKClTcQU?si=MVYZyMLOLO4xooYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>  
+        <section class="history">
+            <h1>Facts & FAQs about our Channel</h1>
+            <ul id="accordion">
+                <li>
+                    <label for="first">When was Kitchen Alchemy Created?<span>&#x3e;</span></label>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <div class="content">
+                            <p>Kitchen Alchemy was created in November 2023. The channel was created alongside the Brand in order to produce content about culinary recipes. Kitchenware used in the content produced was from the brand, and is used in order to promote it and show it being at work in the kitchen.</p>
+                        </div>   
+                </li>
+                <li>
+                    <label for="second">Why Was Kitchen Alchemy Created?<span>&#x3e;</span></label>
+                        <input type="radio" name="accordion" id="second">
+                        <div class="content">
+                            <p>Kitchen Alchemy was created due to a School Project. It was first planned in the first quarter of the class year, while the website and youtube channel along with the branding were created in the second quarter of the class year.</p>
+                        </div>               
+                </li>
+                <li>
+                    <label for="third">Why a Cooking-Based Channel?<span>&#x3e;</span></label>
+                        <input type="radio" name="accordion" id="third">
+                        <div class="content">
+                            <p>A Cooking-Based Channel was created due to the passion of all the members for cooking.</p>
+                        </div>
+                </li>
+                <li>
+                    <label for="fourth">The Members Of Kitchen Alchemy<span>&#x3e;</span></label>
+                        <input type="radio" name="accordion" id="fourth">
+                        <div class="content">
+                            <p>The members of Kitchen Alchemy are Miguel Antonio Mahilum, Cliff Jaiden Pasco, Leugim Gabriel Panganiban, Cedric Lenard Basas, Clyde Reyes, and John Lego Losuegro</p>
+                        </div>   
+                </li>
+            </ul>
+        </section>
+            <section class="footer">
+                <h4>Contact Us</h4>
+                <p>For more information, inquiries, or support, please contact us through our social media platforms.</p>
+                   <div class="icons">
+                    <i class="fa fa-at"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fa fa-linkedin"></i>
+                   </div>
+                   <p>Email Account <i class="fas fa-at"></i>kitchenalchemy1@gmail.com - Facebook Account <i class="fab fa-facebook"></i>Kitchen Alchemy</p>
+                   <p>Twitter Account <i class="fab fa-twitter"></i>@KitchenAlchemy1 - Instagram Account <i class="fa fa-instagram"></i>kitchenalchemy12</p>
+                   <p>TikTok Account <i class="fab fa-tiktok"></i>kitchen_alchemy1 - LinkedIn Account <i class="fab fa-linkedin"></i>Kitchen Alchemy</p>
+                
+                </section>
+            </div>
+            <script>
+                var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+            </script>
